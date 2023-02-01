@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXIBLE GYM</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url("img/bg2.jpg");
+        color: white;
+        font-family: 'Lobster', cursive;
+        background-size: 2306px;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 40px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .mid {
+        border: 2px solid #cd54d5;
+        border-radius: 25px;
+        /* to bring an element in the middle first set the display to block then set the width then margin auto */
+        display: block;
+        width: 99%;
+        margin: 26px auto;
+        text-align: center;
+        padding: 18px 0px;
+    }
+
+    .right {
+        /* border: 2px solid lightcoral; */
+        display: inline-block;
+        position: absolute;
+        right: 21px;
+        top: 175px;
+    }
+
+    .btn {
+        margin: 0px 16px;
+        background-color: black;
+        color: white;
+        padding: 4px 7px;
+        border: 2px solid cyan;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .btn:hover {
+        background-color: #5862ab;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 44px;
+        font-size: 39px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: #ede156;
+    }
+
+    .left img {
+        width: 80px;
+        /* to invert the colour of any element use the invert function. */
+        filter: invert(100%);
+    }
+    h1{
+        color: #96d3d9;
+        margin-bottom: 60px;
+    }
+
+    .container {
+        border: 4px solid white;
+        border-radius: 33px;
+        margin: 200px 80px;
+        padding: 79px 35px;
+        width: 25%;
+        text-align: center;
+    }
+
+    .container button {
+        width: 85px;
+        border-radius: 18px;
+        margin: 20px;
+        padding: 10px;
+        background-color: black;
+    }
+
+    .form-group input {
+        margin: 15px auto;
+        display: block;
+        width: 200px;
+        border: 2px solid cyan;
+        padding: 7px 15px;
+        border-radius: 6px;
+        font-family: cursive;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>FLEXIBLE GYM</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Fitness Calculaor.html">Fitness Calculaor</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">free trial</button>
+            <button class="btn">join now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+                <input type="text" name="" placeholder="enter your age">
+                <input type="text" name="" placeholder="enter your gender">
+                <input type="text" name="" placeholder="enter your address">
+                <input type="text" name="" placeholder="ph no. or mail id">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
